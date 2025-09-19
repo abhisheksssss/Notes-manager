@@ -7,6 +7,10 @@ import mongoose  from "mongoose";
 
 export async function connect(){
     try {
+if(!process.env.MONGO_URI){
+  throw new Error("NO uri founded")
+}
+
         mongoose.connect(process.env.MONGO_URI!);   //by using ! we are saying to type script that process.env.MONGO_URI is always define or i will take care of it 
   const connection= mongoose.connection;
 
