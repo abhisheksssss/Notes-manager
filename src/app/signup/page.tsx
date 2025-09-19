@@ -227,7 +227,7 @@ export default function SignUpPage() {
         </div>
 
         {/* Footer */}
-        <p className="text-center text-xs text-gray-500">
+        {/* <p className="text-center text-xs text-gray-500">
           By creating an account, you agree to our{' '}
           <Link href="/terms" className="text-indigo-600 hover:text-indigo-500">
             Terms of Service
@@ -236,7 +236,7 @@ export default function SignUpPage() {
           <Link href="/privacy" className="text-indigo-600 hover:text-indigo-500">
             Privacy Policy
           </Link>
-        </p>
+        </p> */}
       </div>
     </div>
   )
