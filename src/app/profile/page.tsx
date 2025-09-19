@@ -489,7 +489,7 @@ const Page: React.FC = () => {
                               handleEditNoteChange('notes', e.target.value)
                             }
                             rows={5}
-                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent resize-none"
+                            className="w-full px-3 py-2 text-black text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent resize-none"
                             disabled={isSubmitting}
                           />
                           <div className="flex space-x-2">
