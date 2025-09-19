@@ -3,7 +3,7 @@ import {connect} from "@/dbConfig/dbConfig"
 import User from "@/model/model";
 import { NextResponse } from "next/server";
 
-connect()
+await connect()
 
 
 export async function GET(request) {

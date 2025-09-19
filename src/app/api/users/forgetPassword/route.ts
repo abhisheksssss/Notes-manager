@@ -8,7 +8,7 @@ import {  NextRequest, NextResponse } from "next/server";
 
 export async function POST(request:NextRequest) {
     try {
-        connect();
+       await connect();
         const reqBody= await request.json();
         const{ email }=reqBody;
     if(!email){
