@@ -11,7 +11,9 @@ if(!process.env.MONGO_URI){
   throw new Error("NO uri founded")
 }
 
-        mongoose.connect(process.env.MONGO_URI!);   //by using ! we are saying to type script that process.env.MONGO_URI is always define or i will take care of it 
+        mongoose.connect(process.env.MONGO_URI!,{
+           bufferCommands: false
+        });   //by using ! we are saying to type script that process.env.MONGO_URI is always define or i will take care of it 
   const connection= mongoose.connection;
 
   connection.on("connected",()=>{
@@ -25,7 +27,6 @@ if(!process.env.MONGO_URI){
     } catch (error) {
         console.log("SOmething went Wrong in DB Connection");
         console.log(error);
-
     }
 }
 
